@@ -12,11 +12,15 @@ import HelloWorld from './components/HelloWorld.vue';
 
 <style lang="scss" scoped>
 .active {
+  color: white;
   background: red;
+  border-radius: 8px;
 }
 
 .default {
+  color: black;
   background: gray;
+  border-radius: 0;
 }
 
 .box {
@@ -27,6 +31,8 @@ import HelloWorld from './components/HelloWorld.vue';
     flex: 1;
     height: 50px;
     cursor: pointer;
+    transition: 0.3s;
+    line-height: 50px;
     @extend .default;
   }
 }
